@@ -1,10 +1,10 @@
-# Monkey Language Lexer in C
+# Sam Language Lexer in C
 
-A lexical analyzer (lexer/tokenizer) implementation in C for the Monkey programming language, based on the "Writing An Interpreter In Go" book by Thorsten Ball.
+A lexical analyzer (lexer/tokenizer) implementation in C for the Sam programming language, based on the "Writing An Interpreter In Go" book by Thorsten Ball.
 
 ## Overview
 
-This lexer breaks down Monkey language source code into tokens, which is the first step in building an interpreter. It recognizes keywords, identifiers, numbers, and various operators/delimiters.
+This lexer breaks down Sam language source code into tokens, which is the first step in building an interpreter. It recognizes keywords, identifiers, numbers, and various operators/delimiters.
 
 ## Features
 
@@ -224,7 +224,7 @@ Potential additions:
 
 This implementation is based on:
 - **Book**: "Writing An Interpreter In Go" by Thorsten Ball
-- **Language**: Monkey programming language
+- **Language**: Sam programming language
 
 ## License
 
