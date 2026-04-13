@@ -2,10 +2,6 @@
 #define _LEXERH_
 #include <stddef.h>
 
-typedef struct SLexer Lexer;
-
-Lexer* New(const char* input);
-
 typedef enum{
     TokenTypeIllegal,
     TokenTypeEOF,
@@ -19,6 +15,8 @@ typedef enum{
     TokenTypeRParen,
     TokenTypeLBrace,
     TokenTypeRBrace,
+    TokenTypeLet,
+    TokenTypeFunction,
 } TokenType;
 
 typedef struct SToken{
@@ -26,10 +24,9 @@ typedef struct SToken{
     char* literal;
 }Token;
 
-// Function declarations
-Token* newToken(TokenType token_type, char* literal);
-void readChar(Lexer* l);
-Token* nextToken(Lexer* l);
+typedef struct SLexer Lexer;
 
+Lexer* init_lexer(const char* input);
+Token* create_token(Lexer *l);
 
-#endif // !_LEXERH_
+#endif
